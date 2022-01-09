@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "user#index"
+  post 'user', to: 'user#create'
 end

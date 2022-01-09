@@ -1,1 +1,15 @@
-<h2>Hola mundo</h2>
+<h1>Micolet</h1>
+<p>Almost new fashion with guarentee</p>
+<h2>Welcome! Soon we will launch our site in this country<h2>
+<h2>Suscribe to receive our newsletter<h2>
+
+<%=form_with url: user_path do |form|%>
+    <%= form.email_field :email , placeholder: "email"%>
+    <%= form.check_box :women %>
+    <%= form.label :women, "Women" %>
+    <%= form.check_box :men %>
+    <%= form.label :men, "Men" %>
+    <%= form.check_box :children %>
+    <%= form.label :children, "Children" %>
+    <%= form.submit 'Suscribe'  %>
+<% end %>
