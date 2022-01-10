@@ -1,15 +1,30 @@
-<h1>Micolet</h1>
-<p>Almost new fashion with guarentee</p>
-<h2>Welcome! Soon we will launch our site in this country<h2>
-<h2>Suscribe to receive our newsletter<h2>
+<%=link_to_unless_current "English", locale: "en" %>
+<%=link_to_unless_current "Spanish", locale: "es" %>
+<div class="container">
+<img class="logo" src="https://d30o7qbghf97ws.cloudfront.net/micolet-logo.svg"/>
+<p class="welcome"> <%= t "sponsor"%></p>
+<p><%= t "welcome"%><p>
+<p><%= t "recomendation"%><p>
 
-<%=form_with url: user_path do |form|%>
-    <%= form.email_field :email , placeholder: "email"%>
+<%=form_with url: user_path , class:"form_options" do |form|%>
+    <%= form.label :email, "Email" %>
+    <%= form.email_field :email , class: "form_input", placeholder: "email"%>
+    <p><%= t "preferences"%></p>
+    <div>
     <%= form.check_box :women %>
-    <%= form.label :women, "Women" %>
+    <%= form.label :women, t("women") %>
+    </div>
+    <div>
     <%= form.check_box :men %>
-    <%= form.label :men, "Men" %>
+    <%= form.label :men, t("men") %>
+    </div>
+    <div>
     <%= form.check_box :children %>
-    <%= form.label :children, "Children" %>
-    <%= form.submit 'Suscribe'  %>
+    <%= form.label :children, t("children") %>
+    </div>
+    <%= form.submit t("success"), class: "primary_buttom"   %>
+     <% if @error  %>
+        <p><%= @error %></p>
+    <% end %>
 <% end %>
+</div>

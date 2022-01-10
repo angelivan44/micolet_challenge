@@ -1,24 +1,25 @@
-# README
+# Micolet Challenge Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a full stack tecnical challenge
 
-Things you may want to cover:
+## You need  to install
+Ruby 2.7.5
+Rails -v 7.01
+Postgrest 12.9
 
-* Ruby version
+## `How to setup`
 
-* System dependencies
+-Clone the repository
+-Install gems with (bundle install)
 
-* Configuration
+## `How to run`
+-Create a databse with (rails db:create)
+-Run a migration (rails db:migrate)
+-Run a server (rails s)
+-Open  local host (http://localhost:3000/)
 
-* Database creation
+### How to use
 
-* Database initialization
+-Insert your email
+-Select options
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

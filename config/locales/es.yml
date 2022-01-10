@@ -29,12 +29,12 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  welcome: "Welcome! Soon we will launch our site in this country"
-  sponsor: "Almost new fashion with guarentee"
-  recomendation: "Suscribe to receive our newsletter"
-  preferences: "Preferences"
-  women: "Women's Fashion"
-  men: "Men's Fashion"
-  children: "Children's Fashion"
-  success: "Suscribe me!"
+es:
+  welcome: "¡Bienvenido!, pronto tendremos opciones para su pais"
+  sponsor: "Siempre nueva moda de garantia"
+  recomendation: "Suscribete y recive nuestras ofertas"
+  preferences: "Preferencias"
+  women: "Moda femenina"
+  men: "Moda masculina"
+  children: "Moda infantil"
+  success: "Suscribirte"
